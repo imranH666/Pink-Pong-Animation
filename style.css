@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.container {
+    max-width: 1320px;
+    margin: 0 auto;
+}
+
+.main {
+    width: 500px;
+    height: 400px;
+    border: 2px solid gray;
+    margin: 50px auto;
+}
+
+.triangle1 {
+    width: 130px;
+    height: 50px;
+    border: 2px solid gray;
+    margin: 0 0;
+    transform: scaleZ(1);
+    border-radius: 50px;
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+}
+/* .triangle2 {
+    width: 130px;
+    height: 20px;
+    border: 2px solid gray;
+    margin: 0 0;
+    transform: skew(-50deg);
+    border-radius: 50px;
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+} */
+
+
+/* .triangle1::after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background-color: red;
+    border-radius: 50px;
+    transform-origin: bottom;
+    animation: rotateAnimation 2s linear infinite;
+    z-index: 4;
+}
+.triangle1::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #Fff;
+    border-radius: 50px;
+    transform: scale(.90);
+    z-index: 5;
+}
+@keyframes rotateAnimation {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.triangle2::after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background-color: red;
+    border-radius: 50px;
+    transform-origin: bottom;
+    animation: rotateAnimation 2s linear infinite;
+    z-index: 4;
+}
+.triangle2::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #Fff;
+    border-radius: 50px;
+    transform: scale(.90);
+    z-index: 5;
+} */
+
+
+
+body {
+    background-color: black;
+}
+
+
+.main-container {
+    width: 100%;
+    height: 600px;
+    position: relative;
+}
+.circle {
+    width: 5px;
+    height: 5px;
+    background: linear-gradient(#f1a809, #05f384);
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    animation: circleAnimation 9s linear forwards;
+}
+
+@keyframes circleAnimation {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        width: 50px;
+        height: 50px;
+        top: 5px;
+    }
+}
+
